@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 
 internal class CombinatorTest {
 
@@ -30,7 +31,16 @@ internal class CombinatorTest {
         isSameLists(expectedData, result)
     }
 
-    private fun <T> isSameLists(expectedData: List<List<T>>, result: List<List<T>>) : Unit {
+    private fun <T> isSameLists(expected: List<List<T>>, result: List<List<T>>) {
+        assertEquals(expected.count(), result.count(), "Expected list count (${expected.count()}) is not equals result list count (${result.count()}).")
+        expected.forEach { list ->
+            assert(result.any { isSameList(list, it) })
+        }
+    }
 
+    private fun <T> isSameList(expected: List<T>, result: List<T>) : Boolean = when {
+        expected.isNotEmpty() && result.isNotEmpty() -> expected.first() == result.first() && isSameList(expected.drop(1).toList(), result.drop(1).toList())
+        expected.isEmpty() && result.isEmpty() -> true
+        else -> false
     }
 }

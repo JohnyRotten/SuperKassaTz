@@ -1,7 +1,9 @@
+import java.util.Optional
+
 object ArrayExtensions {
-    tailrec fun <T> List<T>.merge(array: List<T>, selector: (T, T) -> T) : List<T> =
+    tailrec fun <T, U, H> List<T>.merge(list: List<U>, selector: (T, U) -> H) : List<H> =
         when {
-            this.isNotEmpty() && array.isNotEmpty() -> listOf(selector(this.first(), array.first())) + this.drop(1).toList().merge(array.drop(1).toList(), selector)
+            this.isNotEmpty() && list.isNotEmpty() -> listOf(selector(this.first(), list.first())) + this.drop(1).toList().merge(list.drop(1).toList(), selector)
             else -> listOf()
         }
 }

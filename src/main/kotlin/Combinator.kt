@@ -1,3 +1,3 @@
 interface Combinator {
-    fun combine(array: List<List<String?>>): List<List<String>>
+    fun combine(list: List<List<String?>>): List<List<String>>
 }
