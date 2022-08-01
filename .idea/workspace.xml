@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d2922a-40f3-4fb6-bef4-1e30e34fc138" name="Changes" comment="Implement main functionality of console app">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ProgramArgumentException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ProgramArguments.kt" afterDir="false" />
+    <list default="true" id="67d2922a-40f3-4fb6-bef4-1e30e34fc138" name="Changes" comment="Clean up project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ArrayExtensions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Combinator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Combinator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Program.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SimpleCombinator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/CombinatorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/CombinatorTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -70,6 +71,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CombinatorTest.SimpleCombinator combine test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consoleApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatorTest" />
+      <option name="METHOD_NAME" value="SimpleCombinator combine test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinatorTest.SimpleCombinator.combine test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consoleApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CombinatorTest" />
+      <option name="METHOD_NAME" value="SimpleCombinator.combine test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CombinatorTest.combine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="consoleApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,14 +111,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CombinatorTest.SimpleCombinator combine test" />
+      <item itemvalue="JUnit.CombinatorTest.SimpleCombinator.combine test" />
       <item itemvalue="JUnit.CombinatorTest" />
       <item itemvalue="JUnit.CombinatorTest.combine" />
       <item itemvalue="Kotlin.SuperKassaTz" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CombinatorTest.combine" />
         <item itemvalue="JUnit.CombinatorTest" />
+        <item itemvalue="JUnit.CombinatorTest.SimpleCombinator combine test" />
+        <item itemvalue="JUnit.CombinatorTest.SimpleCombinator.combine test" />
+        <item itemvalue="JUnit.CombinatorTest.combine" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659340324663</updated>
-      <workItem from="1659340326164" duration="14876000" />
+      <workItem from="1659340326164" duration="19614000" />
     </task>
     <task id="LOCAL-00001" summary="Init project structure">
       <created>1659344441427</created>
@@ -125,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659350186844</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement main functionality of console app">
+      <created>1659357911647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659357911647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +178,8 @@
     <MESSAGE value="Init project structure" />
     <MESSAGE value="Simple combinator worked" />
     <MESSAGE value="Implement main functionality of console app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement main functionality of console app" />
+    <MESSAGE value="Clean up project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

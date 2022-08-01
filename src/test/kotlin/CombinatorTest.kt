@@ -25,7 +25,7 @@ internal class CombinatorTest {
             listOf("a1", "a2", "a3", "a4")
         )
 
-        val combinator = SimpleCombinator()
+        val combinator = Combinator()
         val result = combinator.combine(inputData)
 
         isSameLists(expectedData, result)

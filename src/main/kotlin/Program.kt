@@ -7,8 +7,7 @@ fun main(args: Array<String>) {
     try {
         val arguments = ProgramArguments.create(args).getOrThrow()
         val input = getInput(arguments.inputFilePath).getOrThrow()
-        val combinator: Combinator = SimpleCombinator()
-        val result = combinator.combine(input)
+        val result = Combinator().combine(input)
         writeResult(result, arguments.outputFilePath)
     } catch (e: java.lang.Exception) {
         println(e)
