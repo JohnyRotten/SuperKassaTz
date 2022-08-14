@@ -20,11 +20,13 @@ fun getInput(inputFilePath: String): Result<List<Quartet>> {
         return Result.failure(ProgramArgumentException.inputFileNotFound(inputFilePath))
     }
     val json = file.readText()
-    return Result.success(Json.decodeFromString(json))
+    return Result.success(
+        Json.decodeFromString<List<List<String?>>>(json)
+            .map { Quartet(it.getOrNull(0), it.getOrNull(1), it.getOrNull(2), it.getOrNull(3)) })
 }
 
 fun writeResult(result: List<Quartet>, outputFilePath: String?) {
-    val json = Json.encodeToString(result)
+    val json = Json.encodeToString(result.map { listOf(it.first, it.second, it.third, it.fourth) })
     if (outputFilePath != null) {
         File(outputFilePath).writeText(json)
         println("Result was saved to: '$outputFilePath'.")
