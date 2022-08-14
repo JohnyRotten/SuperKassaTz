@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     }
 }
 
-fun getInput(inputFilePath: String): Result<List<List<String?>>> {
+fun getInput(inputFilePath: String): Result<List<Quartet>> {
     val file = File(inputFilePath)
     if (!file.exists()) {
         return Result.failure(ProgramArgumentException.inputFileNotFound(inputFilePath))
@@ -23,7 +23,7 @@ fun getInput(inputFilePath: String): Result<List<List<String?>>> {
     return Result.success(Json.decodeFromString(json))
 }
 
-fun writeResult(result: List<List<String>>, outputFilePath: String?) {
+fun writeResult(result: List<Quartet>, outputFilePath: String?) {
     val json = Json.encodeToString(result)
     if (outputFilePath != null) {
         File(outputFilePath).writeText(json)

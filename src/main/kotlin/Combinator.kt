@@ -1,33 +1,20 @@
 class Combinator {
-    fun combine(list: List<List<String?>>): List<List<String>> {
-        val result = mutableListOf<List<String>?>()
-        val set : MutableSet<List<String?>> = list.toMutableSet()
-        set.add(listOf(null, null, null, null))
+    fun combine(list: List<Quartet>): List<Quartet> {
+        val result = mutableSetOf<Quartet>()
+        val set = list.toMutableSet()
 
         while (set.isNotEmpty()) {
-            val listFromSet = set.first()
-            set.remove(listFromSet)
+            val quartet = set.first()
+            set.remove(quartet)
 
-            set.forEach { l ->
-                val mergeResult : List<String>? = mergeUnOptional(listFromSet, l, listOf())
-                result.add(mergeResult)
+            if (quartet.isFull()) {
+                result.add(quartet)
+            } else {
+                set.mapNotNull { it.tryCompose(quartet) }
+                    .forEach { (if (it.isFull()) result else set).add(it) }
             }
         }
 
-        return result.filterNotNull()
-    }
-
-    companion object {
-        private fun <T> mergeUnOptional(listA: List<T?>, listB: List<T?>, result: List<T>) : List<T>? =
-            listA.firstOrNull().let { a ->
-                listB.firstOrNull().let { b ->
-                    when {
-                        listA.isEmpty() && listB.isEmpty() -> result
-                        a != null && b == null -> mergeUnOptional(listA.drop(1).toList(), listB.drop(1).toList(), result + a)
-                        a == null && b != null -> mergeUnOptional(listA.drop(1).toList(), listB.drop(1).toList(), result + b)
-                        else -> null
-                    }
-                }
-            }
+        return result.toList()
     }
 }
