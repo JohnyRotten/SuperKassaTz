@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d2922a-40f3-4fb6-bef4-1e30e34fc138" name="Changes" comment="Clean up project">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Quartet.kt" afterDir="false" />
+    <list default="true" id="67d2922a-40f3-4fb6-bef4-1e30e34fc138" name="Changes" comment="Final simple variant">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Combinator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Combinator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Program.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/CombinatorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/CombinatorTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CombinatorTest">
+  <component name="RunManager" selected="Kotlin.SuperKassaTz">
     <configuration name="CombinatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="consoleApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,7 +100,7 @@
     <configuration name="SuperKassaTz" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="ProgramKt" />
       <module name="consoleApp" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\mrale\IdeaProjects\testData\superkassa_tz_input.json C:\Users\mrale\IdeaProjects\testData\superkassa_tz_output.json" />
+      <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/projects/sampleData/supperkassaTz/input.json $USER_HOME$/projects/sampleData/supperkassaTz/output.json" />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659340324663</updated>
       <workItem from="1659340326164" duration="19614000" />
-      <workItem from="1660465528760" duration="2658000" />
+      <workItem from="1660465528760" duration="3432000" />
     </task>
     <task id="LOCAL-00001" summary="Init project structure">
       <created>1659344441427</created>
@@ -159,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659357911647</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Final simple variant">
+      <created>1660468416584</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660468416584</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +183,8 @@
     <MESSAGE value="Simple combinator worked" />
     <MESSAGE value="Implement main functionality of console app" />
     <MESSAGE value="Clean up project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up project" />
+    <MESSAGE value="Final simple variant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final simple variant" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
